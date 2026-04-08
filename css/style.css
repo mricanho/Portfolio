@@ -163,6 +163,18 @@ a.navbar-item:hover {
   background: black url(../assets/easyweather.jpg) center / cover;
 }
 
+.tunecore-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80') center / cover;
+}
+
+.pluginuseful-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=80') center / cover;
+}
+
+.globant-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80') center / cover;
+}
+
 .p-project {
   background: rgba(51, 51, 51, 0.2);
 }

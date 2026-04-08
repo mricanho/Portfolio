@@ -61,11 +61,11 @@ class TextScramble {
 }
 
 const phrases = [
-  'web-apps.',
-  'websites.',
-  'databases.',
-  'e-commerce.',
-  'solutions.',
+  'platform systems.',
+  'backend services.',
+  'distributed architectures.',
+  'developer productivity.',
+  'reliable solutions.',
 ];
 
 const el = document.querySelector('.text');
