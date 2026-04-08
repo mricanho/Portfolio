@@ -69,17 +69,24 @@ const phrases = [
 ];
 
 const el = document.querySelector('.text');
-const fx = new TextScramble(el);
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-let counter = 0;
-const next = () => {
-  fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 4000);
-  });
-  counter = (counter + 1) % phrases.length;
-};
+if (el) {
+  if (reducedMotion) {
+    el.textContent = phrases[phrases.length - 1];
+  } else {
+    const fx = new TextScramble(el);
+    let counter = 0;
+    const next = () => {
+      fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 4000);
+      });
+      counter = (counter + 1) % phrases.length;
+    };
 
-next();
+    next();
+  }
+}
 
 // Hover button
 
@@ -151,14 +158,9 @@ class HoverButton {
   }
 }
 
-const btn1 = document.getElementById('github');
-new HoverButton(btn1);
-
-const btn2 = document.getElementById('linkedin');
-new HoverButton(btn2);
-
-const btn3 = document.getElementById('angellist');
-new HoverButton(btn3);
-
-const btn4 = document.getElementById('medium');
-new HoverButton(btn4);
+['github', 'linkedin', 'angellist', 'medium'].forEach((id) => {
+  const button = document.getElementById(id);
+  if (button && !reducedMotion) {
+    new HoverButton(button);
+  }
+});

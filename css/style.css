@@ -187,3 +187,13 @@ a.navbar-item:hover {
   list-style-type: none;
   margin-left: 0;
 }
+
+.dud {
+  opacity: 0.6;
+}
+
+a:focus-visible {
+  outline: 2px solid #00faab;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
