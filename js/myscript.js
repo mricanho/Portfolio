@@ -70,9 +70,10 @@ const phrases = [
 
 const el = document.querySelector('.text');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const motionEnabled = false;
 
 if (el) {
-  if (reducedMotion) {
+  if (reducedMotion || !motionEnabled) {
     el.textContent = phrases[phrases.length - 1];
   } else {
     const fx = new TextScramble(el);
@@ -160,7 +161,7 @@ class HoverButton {
 
 ['github', 'linkedin', 'angellist', 'medium'].forEach((id) => {
   const button = document.getElementById(id);
-  if (button && !reducedMotion) {
+  if (button && !reducedMotion && motionEnabled) {
     new HoverButton(button);
   }
 });

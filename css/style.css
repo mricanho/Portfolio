@@ -3,6 +3,13 @@
   right: 40px;
 }
 
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
 ::selection {
   background-color: #88fbd7;
   color: aliceblue;
@@ -24,6 +31,13 @@ a:hover {
 
 .container {
   width: 530px;
+}
+
+.section-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .home-p,
@@ -54,6 +68,8 @@ a.navbar-item:hover {
 
 .title-x {
   font-weight: bolder;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
 }
 
 .front-icon-projects {
@@ -80,7 +96,8 @@ a.navbar-item:hover {
 
   .hero-text {
     font-weight: bolder;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.06em;
   }
 
   .mePhoto {
@@ -109,7 +126,8 @@ a.navbar-item:hover {
 
   .hero-text {
     font-weight: bolder;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.04em;
   }
 
   .photo {
@@ -139,12 +157,40 @@ a.navbar-item:hover {
 
   .hero-text {
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1.45rem;
+    letter-spacing: 0.03em;
   }
 }
 
 .big-container {
   width: 100%;
+}
+
+.work-s .columns {
+  margin-top: 1.5rem !important;
+}
+
+.case-card {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  background-color: #fff;
+}
+
+.case-card h2 {
+  color: #0f172a;
+  line-height: 1.35;
+  margin-top: 0.25rem;
+}
+
+.case-card .image {
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.case-card .card-footer {
+  border-top: 1px solid #e5e7eb;
 }
 
 .sustyle {
@@ -176,7 +222,11 @@ a.navbar-item:hover {
 }
 
 .p-project {
-  background: rgba(51, 51, 51, 0.2);
+  background: rgba(15, 23, 42, 0.6);
+  margin: 1rem;
+  border-radius: 8px;
+  padding: 0.85rem;
+  line-height: 1.5;
 }
 
 .zborder {
@@ -191,6 +241,28 @@ a.navbar-item:hover {
   height: 100vh;
 }
 
+#experience .columns {
+  margin-top: 0.5rem;
+}
+
+.experience-list {
+  border-left: 2px solid #d1d5db;
+  padding-left: 1.25rem;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h3 {
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.experience-item p {
+  color: #374151;
+}
+
 .skill-h {
   background-color: #45d1b2;
 }
@@ -198,6 +270,17 @@ a.navbar-item:hover {
 .content ul {
   list-style-type: none;
   margin-left: 0;
+}
+
+#about .zborder {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem 0.85rem;
+  background: #fff;
+}
+
+#about .extract p {
+  color: #374151;
 }
 
 .dud {
